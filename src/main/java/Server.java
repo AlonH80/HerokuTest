@@ -33,7 +33,7 @@ public class Server extends Observable {
 
 
     protected class MyHttpHandler implements HttpHandler {
-        @Override
+
         public void handle(HttpExchange httpExchange) throws IOException {
             try {
                 if ("GET".equals(httpExchange.getRequestMethod())) {
