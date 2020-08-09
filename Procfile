@@ -1,1 +1,1 @@
-web: java -jar target/TestHeroku.jar
+web: java -jar target/TestHeroku-1.0-SNAPSHOT.jar
