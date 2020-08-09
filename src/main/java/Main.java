@@ -3,8 +3,7 @@ public class Main {
 
     public static void main(String[] args) {
         try {
-            System.out.println("Starting server...c" +
-                    "");
+            System.out.println("Starting server...");
             Server server = new Server();
         }
         catch (Exception e) {

@@ -13,7 +13,8 @@ public class Server extends Observable {
     private HttpServer server;
 
     public Server() throws Exception {
-        server = HttpServer.create(new InetSocketAddress(InetAddress.getByName("0.0.0.0"), 8001), 0);
+        int port = Integer.parseInt(System.getenv("PORT"));
+        server = HttpServer.create(new InetSocketAddress(InetAddress.getByName("0.0.0.0"), port), 0);
         server.createContext("/", new MyHttpHandler());
         server.setExecutor(Executors.newFixedThreadPool(10));
         server.start();
