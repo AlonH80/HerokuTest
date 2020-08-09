@@ -1,1 +1,1 @@
-web: java -classpath target/classes/ Main
+web: java -jar target/TestHeroku.jar
